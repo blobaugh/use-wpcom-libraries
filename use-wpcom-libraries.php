@@ -58,7 +58,7 @@ class Use_WPCOM_Libraries {
 	 **/
 	public function rewrite_src( $src, $handle ) {
 		if( strpos( $src, 'wp-includes' ) ) {
-			$src = str_replace( site_url(), 'http://wordpress.com', $src );
+			$src = str_replace( site_url(), 'http://s0.wp.com', $src );
 		}
 		return $src;
 	}
